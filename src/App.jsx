@@ -1,24 +1,10 @@
-import { Link } from "react-router-dom";
-import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/router";
+
+// api = c6ddfbf86ba792e376ac56508a7908c1
 
 function App() {
-  return (
-    <>
-      <div>
-        <p>LOOK UP THE WEATHER IN THE CITY</p>
-        <hr />
-      </div>
-      <div>
-        <Link to="/location">
-          <button>your location</button>
-        </Link>
-        <div>Weather</div>
-        <div>Explore</div>
-        <button>city search</button>
-      </div>
-      <img src="image/seasons-item.png" alt="seasons item" />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
