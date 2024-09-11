@@ -3,10 +3,10 @@ import Layout from "../../components/layout/layout";
 import FourButton from "./components/button";
 import styles from "./style.module.css";
 
-import Spring from "../../assets/home-btn/spring-flowers.svg?react";
-import Summer from "../../assets/home-btn/summer-outfits.svg?react";
-import Autumn from "../../assets/home-btn/autumn-leaves.svg?react";
-import Winter from "../../assets/home-btn/winter-snow.svg?react";
+// import Spring from "../../assets/home-btn/spring-flowers.svg?react";
+// import Summer from "../../assets/home-btn/summer-outfits.svg?react";
+// import Autumn from "../../assets/home-btn/autumn-leaves.svg?react";
+// import Winter from "../../assets/home-btn/winter-snow.svg?react";
 
 export default function HomePage() {
   return (
