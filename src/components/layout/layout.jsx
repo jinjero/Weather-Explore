@@ -1,5 +1,5 @@
-import Header from "./header";
-import Title from "./title";
+import Header from "./Header/header";
+import Title from "./Title/title";
 
 export default function Layout({ children }) {
   return (

@@ -1,0 +1,35 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  height: 100px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 100px;
+  color: #a64620;
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  height: 100px;
+
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 130px;
+  color: #a64620;
+}
