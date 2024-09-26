@@ -7,14 +7,44 @@
 
   font-weight: 700;
   font-size: 30px;
+}
+
+.main {
   color: #091f6c;
 }
 
+.grey {
+  color: #e5e5e5;
+}
+
+.black {
+  color: #2c2d2f;
+}
+
+.white {
+  color: #ffffff;
+}
+
 .line {
-  background-color: #091f6c;
   border: none;
 
   height: 2px;
   width: 92%;
   margin: auto;
+}
+
+.mainB {
+  background-color: #091f6c;
+}
+
+.greyB {
+  background-color: #e5e5e5;
+}
+
+.blackB {
+  background-color: #2c2d2f;
+}
+
+.whiteB {
+  background-color: #ffffff;
 }

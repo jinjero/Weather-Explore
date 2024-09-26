@@ -24,6 +24,7 @@ const styles = {
     border: "none",
     cursor: "pointer",
     marginBottom: "20px",
+    background: "none",
   },
 
   label: {

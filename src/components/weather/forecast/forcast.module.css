@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 200px;
+  width: 1230px;
+}
+
+.temp {
+  font-weight: 700;
+  font-size: 200px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+
+  width: 550px;
+  height: 350px;
+
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.main,
+.des,
+.high,
+.low {
+  margin-left: 60px;
+  font-weight: 300;
+}
+
+.main {
+  margin-top: 45px;
+  height: 32px;
+  font-size: 32px;
+}
+
+.des {
+  margin-top: 7px;
+  font-size: 25px;
+}
+
+.high,
+.low {
+  font-size: 28px;
+}
+
+.high {
+  margin-top: 30px;
+}
+
+.sun {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.set {
+  margin-left: 100px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+/* color */
+.clear_d {
+  color: #2177d2;
+  -webkit-text-stroke: 2px #fff;
+}
+.clear_n {
+  color: #161d23;
+  -webkit-text-stroke: 2px #fff;
+}
+.clouds_d {
+  color: #4e6e80;
+  -webkit-text-stroke: 2px #fff;
+}
+.clouds_n {
+  color: #27282a;
+  -webkit-text-stroke: 2px #fff;
+}
+.rain {
+  color: #171717;
+  -webkit-text-stroke: 2px #fff;
+}
+.drizzle {
+  color: #004448;
+  -webkit-text-stroke: 2px #fff;
+}
+.snow {
+  color: #2c2d2f;
+  -webkit-text-stroke: 2px #fff;
+}
+.atmosphere {
+  color: #2c2d2f;
+  -webkit-text-stroke: 2px #fff;
+}
+.thunderstorm {
+  color: #645461;
+  -webkit-text-stroke: 2px #fff;
+}

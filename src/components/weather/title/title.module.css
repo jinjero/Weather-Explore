@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 100px;
+  margin-left: 80px;
+  height: 300px;
+}
+
+.first {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  height: 100px;
+
+  font-weight: 700;
+  font-size: 100px;
+}
+
+.city {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  height: 130px;
+
+  font-family: "Yellowtail", cursive;
+  font-size: 130px;
+  text-transform: uppercase;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1330px;
+  /* border: 1px solid red; */
+}
+
+.star {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.white {
+  color: #fff;
+}
+
+.grey {
+  color: #e5e5e5;
+}
+
+.black {
+  color: #2c2d2f;
+}

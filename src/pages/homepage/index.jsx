@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/layout/layout";
-import FourButton from "./components/button";
+import FourButton from "../../components/homepage/button";
 import styles from "./style.module.css";
 
 import Spring from "../../assets/home-btn/spring-flowers.svg?react";
@@ -13,7 +13,7 @@ export default function HomePage() {
     <div className={styles.container}>
       <Layout>
         <div className={styles.fourth}>
-          <Link to="/weather">
+          <Link to="/weather/location">
             <FourButton
               svgImage={<Spring style={{ height: "370px" }} />}
               label="1. Your Location"

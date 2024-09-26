@@ -1,0 +1,32 @@
+.div {
+  height: 100vh;
+}
+
+/* background */
+.clear_d {
+  background-image: url("../../assets/background/clear-day.png");
+}
+.clear_n {
+  background-image: url("../../assets/background/clear-night.png");
+}
+.clouds_d {
+  background-image: url("../../assets/background/clouds-day.png");
+}
+.clouds_n {
+  background-image: url("../../assets/background/clouds-night.png");
+}
+.rain {
+  background-image: url("../../assets/background/rain.png");
+}
+.snow {
+  background-image: url("../../assets/background/snow.png");
+}
+.drizzle {
+  background-image: url("../../assets/background/drizzle.png");
+}
+.thunderstorm {
+  background-image: url("../../assets/background/thunderstorm.png");
+}
+.atmosphere {
+  background-image: url("../../assets/background/atmosphere.png");
+}
