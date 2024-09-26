@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { OpenWeatherMap } from "../services/weather";
+import { TimeOffset } from "../services/offset";
 
-export const useWeather = (lat = 300, lon = 300, city = "") => {
+export const useWeather = (lat, lon, city) => {
   const [weather, setWeather] = useState({
     city: "",
     temp: "",
@@ -33,7 +34,6 @@ export const useWeather = (lat = 300, lon = 300, city = "") => {
       try {
         const weatherData = await OpenWeatherMap(lat, lon, city);
         setWeather(weatherData);
-        console.log(weather);
       } catch (error) {
         console.error(error);
       }

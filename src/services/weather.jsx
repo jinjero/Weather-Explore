@@ -2,16 +2,20 @@ import axios from "axios";
 
 export const OpenWeatherMap = async (lat = 300, lon = 300, city = "") => {
   const API = import.meta.env.VITE_OpenWeather_API;
+  let URL = "";
 
-  if (lat != 300 && lon != 300) {
-    var URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API}`;
+  if (lat !== 300 && lon !== 300) {
+    URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API}`;
+  } else if (city) {
+    URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`;
   } else {
-    var URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`;
+    console.error("No valid location provided for weather data.");
+    return;
   }
 
   try {
     const response = await axios.get(URL);
-    console.log(response);
+    // console.log(response);
 
     const weatherData = {
       city: response.data.name,
@@ -30,5 +34,6 @@ export const OpenWeatherMap = async (lat = 300, lon = 300, city = "") => {
     return weatherData;
   } catch (error) {
     console.error(error);
+    return null;
   }
 };

@@ -11,16 +11,15 @@ import styles from "./style.module.css";
 
 export default function SearchedCityPage() {
   const { city } = useParams();
-  const [cityName, setCityName] = useState("");
+  const savedCity = localStorage.getItem("searchedCity");
+  const cityName = savedCity || city || "";
 
-  useEffect(() => {
-    const savedCity = localStorage.getItem("searchedCity");
-    if (savedCity) {
-      setCityName(savedCity);
-    }
-  }, []);
+  const { weather, calSunrise, calSunset } = useWeather(
+    undefined,
+    undefined,
+    cityName
+  );
 
-  const { weather, calSunrise, calSunset } = useWeather(cityName);
   const backgroundClass = getClass(weather.main, weather.icon);
 
   return (

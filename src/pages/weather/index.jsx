@@ -11,11 +11,10 @@ import Forecast from "../../components/weather/forecast/forecast";
 import styles from "./style.module.css";
 
 export default function WeatherPage() {
-  const { city_name } = useParams();
   const locationPath = useLocation().pathname;
 
   const location = useGeoLocation();
-  const [cityName, setCityName] = useState(city_name || null);
+  const [cityName, setCityName] = useState(null);
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
 
@@ -40,7 +39,8 @@ export default function WeatherPage() {
 
   const { weather, calSunrise, calSunset } = useWeather(
     location.latitude,
-    location.longitude
+    location.longitude,
+    undefined
   );
   const backgroundClass = getClass(weather.main, weather.icon);
 
