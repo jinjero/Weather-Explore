@@ -6,7 +6,7 @@ import SearchedCityPage from "../pages/city/index";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Weather-Explore/",
     element: <HomePage />,
   },
   {
